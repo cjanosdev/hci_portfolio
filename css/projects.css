@@ -1,0 +1,47 @@
+/* 
+  projects.css
+
+  This file is just for the Projects page.
+  I kept the project card styling here because the other pages do not need it.
+*/
+
+/* each project is in its own card so the assignments are easy to scan */
+.project {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* 
+  project images stay the same height so the cards look consistent.
+  object-fit keeps the images from stretching weirdly.
+*/
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* gives the link a little breathing room after the description */
+.project a {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* css for iframe youtube video */
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 10px;
+}
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

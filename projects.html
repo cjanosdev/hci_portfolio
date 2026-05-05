@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Catrina Janos</title>
+
+  <!-- common.css is used on every page -->
+  <link rel="stylesheet" href="css/common.css" />
+
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+
+<body>
+  <!-- accessibility link so keyboard users can skip the repeated top nav -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+     <a class="site-logo" href="about.html" aria-label="Go to homepage">
+      <span class="logo-mark">CJ</span>
+      <span class="logo-text">HCI Portfolio</span>
+    </a>
+    <h1>Catrina Janos</h1>
+    <p>HCI portfolio showing my course projects, design process, and links to my work.</p>
+
+    <!-- these look like tabs but still work as regular page links -->
+    <nav aria-label="Main navigation">
+      <ul class="tabs">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- breadcrumbs show the current page and make it easy to go home -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="about.html">About</a></li>
+      <li aria-current="page">Projects</li>
+    </ol>
+  </nav>
+
+  <main id="main-content">
+    <section>
+      <h2>Projects</h2>
+      <p>
+        These are the main assignments from the course. Each project helped me
+        practice a different part of the HCI design process.
+      </p>
+
+      <article class="project">
+        <p><strong>Demo Video:</strong></p>
+        <div class="video">
+        <iframe 
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/eWxcB1wDcfQ"
+          title="Gestural interaction design sprint demo video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        </div>
+
+        <h3>Design Sprint: Gestural Interaction</h3>
+        <p>
+          In this design sprint, I explored how hand gestures can be used as an
+          alternative way to interact with digital interfaces. My group redesigned
+          the controls for the game 2048 so that instead of using a keyboard, users
+          could perform hand gestures like pointing, thumbs up, and open palm to
+          control movement. We selected gestures based on how easy they were to
+          perform and how clearly they could be recognized by the system. Through
+          testing, we refined our gestures to make them faster, more comfortable,
+          and less likely to be misinterpreted. This project helped me think more
+          about usability, efficiency, and how small interaction decisions impact
+          the overall user experience.
+        </p>
+        <a href="https://www.notion.so/Design-Sprint-2-Designing-for-Gestural-Interaction-31c374943f5d803590f6d682e4f2132b" target="_blank" rel="noopener noreferrer">View design doc on Notion</a>
+      </article>
+
+      <article class="project">
+        <img src="project1.jpg" alt="Preview image for the Designing for Others project" />
+        <h3>Designing for Others</h3>
+        <p>
+        In design sprint 1: Designing for Others, I worked on redesigning the UNH Parking Services web portal
+        for commuter students, with a focus on improving the mobile experience. We
+        started by conducting user research, including interviews with a commuter
+        student, to better understand common frustrations with the existing site.
+        We found that the current design was difficult to navigate, text-heavy, and
+        unclear when completing tasks like buying permits or paying tickets.
+      </p>
+
+      <p>
+        Using these insights, we created sketches, paper prototypes, and a final
+        interactive design in Figma that focused on clarity, speed, and ease of use. We
+        simplified navigation, reduced unnecessary information, and organized content
+        using visual hierarchy and grouping principles. This project helped me better
+        understand how user research and iterative design can lead to more usable and
+        efficient interfaces.
+      </p>
+        <a href="https://ajar-physician-927.notion.site/Designing-for-Others-30b0c3b54a1880ed9987feadf29e78d8" target="_blank" rel="noopener noreferrer">View design doc on Notion</a>
+      </article>
+
+      <article class="project">
+        <img src="project3.jpg" alt="Preview image for the usability design project" />
+        <h3>Designing for Usability</h3>
+       <p>
+        In Design Sprint 3, we were asked to run an evaluation to test the usability
+        of a user interface of our choice. I chose Goodreads, a social networking
+        platform for book lovers that is mainly used to review books, track reading
+        progress, and connect with other readers. I selected this interface because
+        I felt it had a lot of potential for improving usability. Based on my own
+        experience, I often found Goodreads frustrating to use, especially when
+        reviewing and rating books, which made it a strong candidate for redesigning
+        and optimizing the overall user experience.
+      </p>
+
+      <p>
+        I began by conducting a heuristic evaluation using Nielsen’s usability
+        principles to identify key issues, such as inconsistent interactions,
+        confusing organization, and limited error prevention. Based on these findings,
+        I redesigned the interface and created a functional version called “BookFace,”
+        focusing on making common tasks more efficient and easier to use.
+      </p>
+
+      <p>
+        I then evaluated both the original and redesigned interfaces using timed tasks
+        and usability surveys. The results showed that my redesign improved efficiency
+        and user satisfaction. This project helped me better understand how usability
+        evaluation can guide design decisions and lead to more effective interfaces.
+      </p>
+        <a href="https://medium.com/@catrina.janos/designing-for-usability-a7ef3a52f759" target="_blank" rel="noopener noreferrer">View Design Doc on Medium</a>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Catrina Janos</p>
+  </footer>
+</body>
+</html>

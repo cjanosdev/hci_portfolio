@@ -1,0 +1,266 @@
+/* 
+  common.css
+
+  This is the main shared CSS file.
+  I put the stuff that every page uses in here so I do not have to copy it
+  into about.css, projects.css, docs.css, and links.css.
+*/
+
+/* this makes sizing easier because padding and borders count inside the width */
+* {
+  box-sizing: border-box;
+}
+
+/* basic page setup: simple font, readable text, and a soft background */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* 
+  skip link for accessibility.
+  It is hidden until someone tabs to it, then it shows up.
+  This helps keyboard users skip the header and tabs.
+*/
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 12px;
+  background: #111827;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+/* when the skip link gets focus, it moves onto the screen */
+.skip-link:focus {
+  left: 12px;
+}
+
+/* header is the top intro area with my name and short portfolio description */
+.site-header {
+  background: #e6e1ff;
+  color: #111827;
+  text-align: center;
+  padding: 48px 20px 24px;
+}
+
+/* big name at the top */
+.site-header h1 {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+}
+
+/* keeps the intro text from getting too wide */
+.site-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #333333;
+}
+
+/* 
+  the main nav is styled like tabs.
+  They are still normal links, which is nice because each page works on its own.
+*/
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 28px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* each nav link looks like a button/tab */
+.tabs a {
+  display: inline-block;
+  min-width: 110px;
+  padding: 10px 16px;
+  border: 2px solid #3730a3;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3730a3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 
+  hover and keyboard focus on tabs.
+  This makes the site feel more interactive and shows what the user is on.
+*/
+.tabs a:hover,
+.tabs a:focus-visible {
+  background: #f1efff;
+}
+
+/* active tab shows the page you are currently on */
+.tabs a[aria-current="page"] {
+  background: #3730a3;
+  color: #ffffff;
+}
+
+/* 
+  breadcrumbs show where you are.
+  They also give a quick way to go back to about/homepage
+*/
+.breadcrumbs {
+  max-width: 900px;
+  margin: 18px auto 0;
+  padding: 0 20px;
+  font-size: 0.95rem;
+}
+
+/* makes the breadcrumb items sit in one line when there is room */
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* slash between breadcrumb parts, like Home / Projects */
+.breadcrumbs li:not(:last-child)::after {
+  content: "/";
+  margin-left: 8px;
+  color: #555555;
+}
+
+/* breadcrumb home link */
+.breadcrumbs a {
+  color: #3730a3;
+  font-weight: 700;
+}
+
+/* current breadcrumb is darker so it reads like the current page */
+.breadcrumbs [aria-current="page"] {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* main keeps the page content centered and not too wide */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 50px;
+}
+
+/* spacing between sections so the page does not feel cramped */
+section {
+  margin-bottom: 36px;
+}
+
+/* heading colors are dark for good contrast */
+h2,
+h3 {
+  color: #111827;
+}
+
+/* removes extra top space from first h2 in a section */
+h2 {
+  margin-top: 0;
+}
+
+/* link color is dark purple so it passes contrast better than a light blue */
+a {
+  color: #3730a3;
+}
+
+/* underline on hover makes links feel more obviously clickable */
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* 
+  focus outline is for keyboard navigation.
+  It is important because users should always know where the cursor/focus is.
+*/
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #111827;
+  outline-offset: 3px;
+}
+
+/* 
+  card style used in a few pages. kind of like material ui paper (but simpler for a portfolio website)
+  Cards help group related information and make the page easier to scan.
+*/
+.card {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+/* footer is simple and separated from the content */
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  color: #374151;
+  border-top: 1px solid #d1d5db;
+}
+
+/* 
+  smaller screen styles.
+  The tabs stack on phones so they are easier to tap.
+*/
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .tabs a {
+    width: 100%;
+  }
+}
+
+
+/* keeps nav at the top when scrolling */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #e6e1ff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* logo styling */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* circle with CJ */
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #3730a3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* small label next to it */
+.logo-text {
+  font-size: 0.95rem;
+}
+
+/* hover makes it feel clickable */
+.site-logo:hover {
+  text-decoration: underline;
+}

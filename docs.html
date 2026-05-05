@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Docs | Catrina Janos</title>
+
+  <!-- common.css is used on every page -->
+  <link rel="stylesheet" href="css/common.css" />
+
+  <link rel="stylesheet" href="css/docs.css" />
+</head>
+
+<body>
+  <!-- accessibility link so keyboard users can skip the repeated top nav -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="site-logo" href="about.html" aria-label="Go to homepage">
+      <span class="logo-mark">CJ</span>
+      <span class="logo-text">HCI Portfolio</span>
+    </a>
+    <h1>Catrina Janos</h1>
+    <p>HCI portfolio showing my course projects, design process, and links to my work.</p>
+
+    <!-- these look like nice tabs but are just technically links -->
+    <nav aria-label="Main navigation">
+      <ul class="tabs">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="docs.html" aria-current="page">Docs</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- breadcrumbs show the current page and make it easy to go home -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="about.html">About</a></li>
+      <li aria-current="page">Docs</li>
+    </ol>
+  </nav>
+
+  <main id="main-content">
+    <section>
+      <h2>Design Docs</h2>
+      <p>
+        These links go to the longer design documents and writeups for my course
+        assignments.
+      </p>
+
+      <ul class="docs-list">
+        <li><a href="https://www.notion.so/Design-Sprint-2-Designing-for-Gestural-Interaction-31c374943f5d803590f6d682e4f2132b" target="_blank" rel="noopener noreferrer">Design Sprint 2: Designing for Gestural Interaction on Notion</a></li>
+        <li><a href="https://ajar-physician-927.notion.site/Designing-for-Others-30b0c3b54a1880ed9987feadf29e78d8" target="_blank" rel="noopener noreferrer">Design Sprint 1: Designing for Others on Notion</a></li>
+        <li><a href="https://medium.com/@catrina.janos/designing-for-usability-a7ef3a52f759"target="_blank" rel="noopener noreferrer">Design Sprint 3: Designing for Usability on Medium</li>
+        <li><a href="https://medium.com/@catrina.janos/designing-for-sleep-acd02075e910" target="_blank" rel="noopener noreferrer">Homework 2: Designing for Sleep on Medium</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Catrina Janos</p>
+  </footer>
+</body>
+</html>

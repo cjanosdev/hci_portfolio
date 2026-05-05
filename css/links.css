@@ -1,0 +1,15 @@
+/* 
+  links.css
+
+  This file is only for the Links page.
+*/
+
+/* keeps link card headings close to the top of the card */
+.link-card h3 {
+  margin-top: 0;
+}
+
+/* small spacing so the button/link does not feel too far from the text */
+.link-card p {
+  margin-bottom: 10px;
+}

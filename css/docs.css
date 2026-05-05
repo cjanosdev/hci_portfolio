@@ -1,0 +1,26 @@
+/* 
+  docs.css
+
+  This file is only for the Design Docs page.
+*/
+
+/* 
+  the docs list is placed in a card so the links do not feel like they are
+  floating by themselves.
+*/
+.docs-list {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 18px 24px;
+}
+
+/* small spacing between doc links so they are easier to click */
+.docs-list li {
+  margin-bottom: 10px;
+}
+
+/* removes extra space under the last list item */
+.docs-list li:last-child {
+  margin-bottom: 0;
+}
